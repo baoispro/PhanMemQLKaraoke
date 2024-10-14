@@ -325,7 +325,7 @@ public class FrmQuenMatKhau extends JFrame implements ActionListener {
 		System.out.println(SDT_VN);
 		int maXN = (int) (Math.random() * (999999 - 100000 + 1)) + 100000;
 		String sms = "Mã xác nhận của bạn là " + maXN;
-		Message message = Message.creator(new PhoneNumber(SDT_VN), new PhoneNumber("PhoneNumberNeedToChange"), sms).create();
+		Message message = Message.creator(new PhoneNumber(SDT_VN), new PhoneNumber("PhoneNeedToChange"), sms).create();
 		System.out.println(message.getSid());
 		return maXN;
 	}
